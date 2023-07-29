@@ -1,0 +1,54 @@
+{
+  "private": true,
+  "name": "kyo9bo-ui",
+  "version": "1.0.0",
+  "description": "component library for React.",
+  "module": "lib/index.js",
+  "scripts": {
+    "lint": "eslint 'src/**.tsx'",
+    "build": "tsc -p tsconfig.build.json",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "storybook dev",
+    "build-storybook": "storybook build",
+    "chromatic": "chromatic --exit-zero-on-changes"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kk3939/kyo9bo-ui.git"
+  },
+  "author": "kyo9bo <kyo51310@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kk3939/kyo9bo-ui/issues"
+  },
+  "homepage": "https://github.com/kk3939/kyo9bo-ui#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^6.0.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "@babel/preset-react": "^7.22.5",
+    "@babel/preset-typescript": "^7.22.5",
+    "@cybozu/eslint-config": "^22.0.0",
+    "@storybook/addon-a11y": "^7.1.1",
+    "@storybook/addon-actions": "^7.1.1",
+    "@storybook/addon-essentials": "^7.1.1",
+    "@storybook/react": "^7.1.1",
+    "@storybook/react-webpack5": "^7.1.1",
+    "@storybook/testing-library": "^0.2.0",
+    "@tsconfig/recommended": "^1.0.2",
+    "@types/react": "^18.2.17",
+    "@types/react-dom": "^18.2.7",
+    "@types/styled-components": "^5.1.26",
+    "babel-loader": "^9.1.3",
+    "chromatic": "^6.20.0",
+    "eslint": "^8.46.0",
+    "eslint-plugin-storybook": "^0.6.13",
+    "prettier": "^3.0.0",
+    "storybook": "^7.1.1",
+    "typescript": "^5.1.6"
+  }
+}
