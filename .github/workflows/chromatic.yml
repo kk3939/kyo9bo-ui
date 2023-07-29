@@ -6,7 +6,7 @@ jobs:
   chromatic-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
       - run: yarn --frozen-lockfile
       - run: yarn run chromatic --only-changed
         env:
