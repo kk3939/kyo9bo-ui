@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: yarn --frozen-lockfile
-      - run: yarn run chromatic --only-changed
+      - run: npm ci
+      - run: npm run chromatic --only-changed
         env:
           CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
