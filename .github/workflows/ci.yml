@@ -15,9 +15,9 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: '16'
-        cache: 'yarn'
-    - run: yarn install --frozen-lockfile
-    - run: yarn run lint
+        cache: 'npm'
+    - run: npm ci
+    - run: npm run lint
 
   build:
     runs-on: ubuntu-latest
@@ -27,6 +27,6 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: '16'
-        cache: 'yarn'
-    - run: yarn install --frozen-lockfile
-    - run: yarn run build
+        cache: 'npm'
+    - run: npm ci
+    - run: npm run build

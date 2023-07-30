@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 
-import TextArea from "./index";
+import InputText from "./index";
 
 import type { Meta, StoryFn } from "@storybook/react";
 
 export default {
-  title: "TextArea",
-  component: TextArea,
-} as Meta<typeof TextArea>;
+  title: "InputText",
+  component: InputText,
+} as Meta<typeof InputText>;
 
-export const TextAreaControl: StoryFn<typeof TextArea> = () => {
+export const InputTextControl: StoryFn<typeof InputText> = () => {
   const [value, setValue] = useState("");
   return (
-    <TextArea
+    <InputText
       placeholder="placeholder"
       value={value}
       onChange={(event) => setValue(event.target.value)}
